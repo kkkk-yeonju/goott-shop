@@ -31,4 +31,9 @@ public class ShopController {
 	public String detail(){
 		return "single-product";
 	}
+	
+	@RequestMapping(value="/write-product", method = RequestMethod.GET)
+	public String productinsert(){
+		return "/manager/write-product";
+	}
 }
